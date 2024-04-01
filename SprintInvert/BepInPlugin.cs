@@ -16,7 +16,7 @@ namespace SprintInvert
         {
             Log = Logger;
             SprintInvertEnabled = Config.Bind("General", "SprintInvertEnabled", true);
-            TapToggleEnabled = Config.Bind("General", "TapToggleEnabled", true);
+            TapToggleEnabled = Config.Bind("General", "TapToggleEnabled", false);
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), MyPluginInfo.PLUGIN_GUID);
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }
