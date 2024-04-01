@@ -23,7 +23,7 @@ Requires VoidManager 1.0.5
 
 ### 👥 : Multiplayer Functionality :
 
-- ✅ Client
+- ✅ Client  
 Only effects the local client
 
 ---------------------
