@@ -8,7 +8,11 @@ namespace SprintInvert
     {
         static void Prefix(ref bool active)
         {
-            active = !active;
+            //Inversion!
+            if (BepinPlugin.SprintInvertEnabled.Value)
+            {
+                active = !active;
+            }
         }
     }
 }
