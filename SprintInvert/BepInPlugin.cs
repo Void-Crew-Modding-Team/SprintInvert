@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
 using System.Reflection;
@@ -14,8 +15,13 @@ namespace SprintInvert
         private void Awake()
         {
             Log = Logger;
+            SprintInvertEnabled = Config.Bind("General", "SprintInvertEnabled", true);
+            TapToggleEnabled = Config.Bind("General", "TapToggleEnabled", true);
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), MyPluginInfo.PLUGIN_GUID);
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }
+
+        internal static ConfigEntry<bool> SprintInvertEnabled;
+        internal static ConfigEntry<bool> TapToggleEnabled;
     }
 }
