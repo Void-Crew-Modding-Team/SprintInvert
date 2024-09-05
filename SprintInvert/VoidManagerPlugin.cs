@@ -6,8 +6,10 @@ namespace SprintInvert
     {
         public override MultiplayerType MPType => MultiplayerType.Client;
 
-        public override string Author => "18107, Dragon";
+        public override string Author => MyPluginInfo.PLUGIN_AUTHORS;
 
-        public override string Description => "Inverts sprint keybind. Client-Side.";
+        public override string Description => MyPluginInfo.PLUGIN_DESCRIPTION;
+
+        public override string ThunderstoreID => MyPluginInfo.PLUGIN_THUNDERSTORE_ID;
     }
 }
