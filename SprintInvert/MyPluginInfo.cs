@@ -1,3 +1,4 @@
+#pragma warning disable CS1591
 namespace SprintInvert
 {
     //Auto-Generated File. Created by PreBuild.ps1
@@ -10,6 +11,7 @@ namespace SprintInvert
         public const string PLUGIN_DESCRIPTION = "Inverts sprint keybind. Client-Side.";
         public const string PLUGIN_ORIGINAL_AUTHOR = "18107";
         public const string PLUGIN_AUTHORS = "18107, Dragon";
-        public const string PLUGIN_THUNDERSTORE_ID = "";
+        public const string PLUGIN_THUNDERSTORE_ID = "VoidCrewModdingTeam/Sprint_Invert";
     }
 }
+#pragma warning restore CS1591
